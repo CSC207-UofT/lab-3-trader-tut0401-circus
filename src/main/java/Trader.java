@@ -72,7 +72,6 @@ public class Trader {
                 sold_at_least_one = true;
             }
         }
-
         this.inventory.removeAll(temp);
         other.inventory.addAll(temp);
         other.wishlist.removeAll(temp);
@@ -96,8 +95,9 @@ public class Trader {
         List<Tradable> all_items = Arrays.asList(
                 new Horse(),
                 new Horse(),
-                new Horse()
-                // TODO: Add Tradable objects here!
+                new Horse(),
+                new Car(),
+                new Car()
         );
 
         /* Below, we've created two Traders. Their money, inventory, and
