@@ -72,7 +72,6 @@ public class Trader {
                 sold_at_least_one = true;
             }
         }
-
         this.inventory.removeAll(temp);
         other.inventory.addAll(temp);
         other.wishlist.removeAll(temp);
@@ -97,6 +96,8 @@ public class Trader {
                 new Horse(),
                 new Horse(),
                 new Horse(),
+                new Car(),
+                new Car()
                 new Donkey(1, 15, 100)
                 new Wagon()
                 // TODO: Add Tradable objects here!
