@@ -1,8 +1,5 @@
 public class Lambo implements Tradable, Drivable{
-    private int maxSpeed;
-
-    @Override
-    public int getPrice(){ return 400000; }
+    private int maxSpeed = 350;
 
     @Override
     public void upgradeSpeed() {
@@ -16,6 +13,11 @@ public class Lambo implements Tradable, Drivable{
 
     @Override
     public int getMaxSpeed() {
-        return 350;
+        return maxSpeed;
+    }
+
+    @Override
+    public int getPrice() {
+        return 400000;
     }
 }
